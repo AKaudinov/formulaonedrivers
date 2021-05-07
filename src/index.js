@@ -13,8 +13,7 @@ store.dispatch(fetchDrivers());
 ReactDOM.render(
     <Provider store={store}>
       <AppRouter/>
-    </Provider>
-    ,
+    </Provider>,
   document.getElementById('root')
 );
 
