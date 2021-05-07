@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { store } from './app/store';
+import './styles/index.css';
+import AppRouter from "./routers/AppRouter";
+import configureStore from './store/configureStore';
 import { Provider } from 'react-redux';
+import { fetchDrivers } from "./actions/drivers";
 import * as serviceWorker from './serviceWorker';
 
+const store = configureStore();
+store.dispatch(fetchDrivers());
+
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <AppRouter/>
     </Provider>
-  </React.StrictMode>,
+  //</React.StrictMode>
+    ,
   document.getElementById('root')
 );
 
