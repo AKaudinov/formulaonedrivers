@@ -11,11 +11,9 @@ const store = configureStore();
 store.dispatch(fetchDrivers());
 
 ReactDOM.render(
-  // <React.StrictMode>
     <Provider store={store}>
       <AppRouter/>
     </Provider>
-  //</React.StrictMode>
     ,
   document.getElementById('root')
 );
