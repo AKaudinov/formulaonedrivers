@@ -1,6 +1,6 @@
 
 
-Built with React Redux and material ui
+Built with React Redux and material-ui
 
 install dependencies with `yarn install` or `npm install`
 ## Available Scripts
