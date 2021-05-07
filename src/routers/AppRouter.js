@@ -20,7 +20,6 @@ const AppRouter = () => {
                     <Switch>
                         <Route exact path="/" component={Dashboard}/>
                         <Route path="/driverdetails/:id" component={DriverDetails}/>
-                        {/*<Route component={NotFound}/>*/}
                         <Route component={NotFound}/>
                     </Switch>
                 </Container>
